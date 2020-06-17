@@ -13,7 +13,7 @@ exports[`page - index should render 1`] = `
       <img
         className="jsx-4168855969 br-100 h5 w5 center dib ma3"
         src="/static/uglytarantula-commission.jpg"
-        title="commission by @uglytarantula"
+        title="commission by @rosygaze"
       />
       <h1
         className="jsx-4168855969 lh-title fw2 f2"
@@ -124,14 +124,14 @@ exports[`page - index should render 1`] = `
           artwork by 
           <a
             className="link underline"
-            href="https://www.uglytarantula.com"
+            href="https://rosygaze.com"
             style={
               Object {
                 "color": "#FF5757",
               }
             }
           >
-            Ugly Tarantula
+            Rosy Gaze
           </a>
           
         </li>
