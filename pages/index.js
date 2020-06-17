@@ -27,7 +27,7 @@ const Index = () => (
         <img
           className={cx.img}
           src='/static/uglytarantula-commission.jpg'
-          title='commission by @uglytarantula'
+          title='commission by @rosygaze'
         />
         <h1 className={cx.h1}>
           <a
@@ -78,8 +78,8 @@ const Index = () => (
             className={cx.liLast}
             color={colors.pweach}
             prefix='artwork by '
-            text='Ugly Tarantula'
-            url='https://www.uglytarantula.com'
+            text='Rosy Gaze'
+            url='https://rosygaze.com'
           />
         </ul>
       </article>
