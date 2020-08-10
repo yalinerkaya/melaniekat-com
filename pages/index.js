@@ -40,6 +40,13 @@ const Index = () => (
 
         <ul className={cx.ul}>
           <ListLink
+            className={cx.liLast}
+            color={colors.pwink}
+            text='girlfriend.technology'
+            rel='me'
+            url='https://girlfriend.technology'
+          />
+          <ListLink
             prefix='i link blog at '
             text='melkat.link'
             rel='me'
@@ -60,7 +67,7 @@ const Index = () => (
 
           <ListLink
             className={cx.liLast}
-            color={colors.pwink}
+            color={colors.gween}
             prefix='i make siri shortcuts on '
             text='routinehub'
             rel='me'
