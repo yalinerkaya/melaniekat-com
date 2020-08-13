@@ -51,7 +51,7 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   title: 'Melanie Kat',
-  description: '',
+  description: 'the personal homepage of melanie kat',
   className: ''
 }
 
