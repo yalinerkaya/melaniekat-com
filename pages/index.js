@@ -16,7 +16,7 @@ const cx = {
   h1: 'lh-title fw2 f2',
   h1a: 'no-underline',
   ul: 'list pl0 tl',
-  liLast: 'lh-title mb2 mt4',
+  liTop: 'lh-title xmb2 mt4',
   img: 'br-100 h5 w5 center dib ma3'
 }
 
@@ -40,23 +40,19 @@ const Index = () => (
 
         <ul className={cx.ul}>
           <ListLink
-            className={cx.liLast}
+            className={cx.liTop}
             color={colors.pwink}
+            prefix='working on '
             text='girlfriend.technology'
             rel='me'
             url='https://girlfriend.technology'
           />
           <ListLink
+            className={cx.liTop}
             prefix='i link blog at '
             text='melkat.link'
             rel='me'
             url='https://melkat.link'
-          />
-          <ListLink
-            prefix='i code at '
-            text='melkat.dev'
-            rel='me'
-            url='https://melkat.dev'
           />
           <ListLink
             prefix='my gif library is at '
@@ -64,25 +60,37 @@ const Index = () => (
             rel='me'
             url='https://myhot.pics'
           />
+          <ListLink
+            prefix='my faux ad network is '
+            text='melkat.deals'
+            rel='me'
+            url='https://melkat.deals'
+          />
 
           <ListLink
-            className={cx.liLast}
-            color={colors.gween}
-            prefix='i make siri shortcuts on '
+            className={cx.liTop}
+            text='github'
+            rel='me'
+            url='https://github.com/zicklepop'
+          />
+          <ListLink
+            text='twitter'
+            rel='me'
+            url='https://twitter.com/zicklepop'
+          />
+          <ListLink
             text='routinehub'
             rel='me'
             url='https://routinehub.co/user/zicklepop'
           />
           <ListLink
-            color={colors.gween}
-            prefix='do you need to '
-            text='givemel.cash'
-            postfix='?'
+            text='twitch'
             rel='me'
-            url='http://givemel.cash'
+            url='https://twitch.tv/zicklepop'
           />
+
           <ListLink
-            className={cx.liLast}
+            className={cx.liTop}
             color={colors.pweach}
             prefix='artwork by '
             text='Rosy Gaze'
