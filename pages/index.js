@@ -33,7 +33,7 @@ const Index = () => (
             className={cx.h1a}
             href='/'
           >
-            {'Hi! My name is Melanie.'}
+            Hi! My name is Melanie.
           </a>
         </h1>
 
