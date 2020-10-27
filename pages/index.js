@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Layout from '../components/layout'
 import ListLink from '../components/list-link'
 
@@ -16,18 +17,21 @@ const cx = {
   h1a: 'no-underline',
   ul: 'list pl0 tl',
   liTop: 'lh-title xmb2 mt4',
-  img: 'br-100 h5 w5 center dib ma3'
+  img: 'br-100 center dib ma3 overflow-hidden'
 }
 
 const Index = () => (
   <Layout className={cx.main}>
     <div className={cx.container}>
       <article className={cx.article}>
-        <img
-          className={cx.img}
-          src='/static/uglytarantula-commission.jpg'
-          title='commission by @rosygaze'
-        />
+        <div className={cx.img}>
+          <Image
+            src='/static/uglytarantula-commission.jpg'
+            alt='commission by @rosygaze'
+            width={256}
+            height={256}
+          />
+        </div>
         <h1 className={cx.h1}>
           <a
             className={cx.h1a}
