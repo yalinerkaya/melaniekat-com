@@ -26,10 +26,11 @@ const Index = () => (
       <article className={cx.article}>
         <div className={cx.img}>
           <Image
-            src='/static/uglytarantula-commission.jpg'
             alt='commission by @rosygaze'
-            width={256}
             height={256}
+            sizes={[256, 512, 768]}
+            src='/static/uglytarantula-commission.jpg'
+            width={256}
           />
         </div>
         <h1 className={cx.h1}>
