@@ -73,24 +73,17 @@ const Index = () => (
 
           <ListLink
             className={cx.liTop}
-            text='github'
+            postfix=' (drop ICE)'
+            prefix='i push code to '
             rel='me'
+            text='github'
             url='https://github.com/zicklepop'
           />
           <ListLink
+            prefix='i am unfortunately on '
+            rel='me'
             text='twitter'
-            rel='me'
             url='https://twitter.com/zicklepop'
-          />
-          <ListLink
-            text='routinehub'
-            rel='me'
-            url='https://routinehub.co/user/zicklepop'
-          />
-          <ListLink
-            text='twitch'
-            rel='me'
-            url='https://twitch.tv/zicklepop'
           />
 
           <ListLink
