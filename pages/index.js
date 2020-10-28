@@ -16,7 +16,7 @@ const cx = {
   h1: 'lh-title fw2 f2',
   h1a: 'no-underline',
   ul: 'list pl0 tl',
-  liTop: 'lh-title xmb2 mt4',
+  liTop: 'lh-title mb2 mt4',
   img: 'br-100 center dib ma3 overflow-hidden'
 }
 
