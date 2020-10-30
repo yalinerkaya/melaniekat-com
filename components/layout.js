@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
+// TODO: implement i18n
+
 const cx = {
   main: ''
 }
