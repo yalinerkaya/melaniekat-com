@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Layout from '../components/layout'
 import ListLink from '../components/list-link'
-import { useRouter } from 'next/router'
 import useI18n from '../hooks/use-i18n'
+import { useRouter } from 'next/router'
 
 const colors = {
   gween: '#65A300',
@@ -32,7 +32,7 @@ const Index = () => {
             <Image
               alt={t('image-description')}
               height={256}
-              sizes={[256, 512, 768]}
+              loading='eager'
               src='/uglytarantula-commission.jpg'
               width={256}
             />
