@@ -28,7 +28,7 @@ const Index = () => {
     <Layout className={cx.main}>
       <div className={cx.container}>
         <article className={cx.article}>
-          <div className={cx.img}>
+          <div className={cx.img} style={{ height: 256 }}>
             <Image
               alt={t('image-description')}
               height={256}
