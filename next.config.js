@@ -1,5 +1,5 @@
-const withCss = require('@zeit/next-css')
-const withPurgeCss = require('next-purgecss')
+// const withCss = require('@zeit/next-css')
+// const withPurgeCss = require('next-purgecss')
 const withPlugins = require('next-compose-plugins')
 
 const nextConfig = {
@@ -11,8 +11,8 @@ const nextConfig = {
 
 module.exports = withPlugins(
   [
-    [withCss],
-    [withPurgeCss]
+    //    [withCss],
+    // [withPurgeCss]
   ],
   nextConfig
 )
