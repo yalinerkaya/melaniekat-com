@@ -27,8 +27,10 @@
     "standard": "^16.0.3"
   },
   "resolutions": {
+    "glob-parent": "^5.1.2",
     "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
+    "postcss": "^7.0.36",
     "y18n": "^4.0.1"
   },
   "jest": {
