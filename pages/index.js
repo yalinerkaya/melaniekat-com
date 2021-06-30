@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import Link from 'next/link'
 import ListLink from '../components/list-link'
+import comission from '../public/uglytarantula-commission.jpg'
 import useI18n from '../hooks/use-i18n'
 import { useRouter } from 'next/router'
 
@@ -29,13 +30,12 @@ const Index = () => {
     <Layout className={cx.main}>
       <div className={cx.container}>
         <article className={cx.article}>
-          <div className={cx.img} style={{ height: 256 }}>
+          <div className={cx.img} style={{ height: 256, width: 256 }}>
             <Image
               alt={t('image-description')}
-              height={256}
               loading='eager'
-              src='/uglytarantula-commission.jpg'
-              width={256}
+              src={comission}
+              placeholder='blur'
             />
           </div>
           <h1 className={cx.h1}>
