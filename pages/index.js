@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Layout from '../components/layout'
+import Link from 'next/link'
 import ListLink from '../components/list-link'
 import useI18n from '../hooks/use-i18n'
 import { useRouter } from 'next/router'
@@ -38,12 +39,11 @@ const Index = () => {
             />
           </div>
           <h1 className={cx.h1}>
-            <a
-              className={cx.h1a}
-              href='/'
-            >
-              {t('introduction')}
-            </a>
+            <Link href='/'>
+              <a className={cx.h1a}>
+                {t('introduction')}
+              </a>
+            </Link>
           </h1>
 
           <ul className={cx.ul}>
