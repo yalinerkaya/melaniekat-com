@@ -33,9 +33,11 @@ const Index = () => {
           <div className={cx.img} style={{ height: 256, width: 256 }}>
             <Image
               alt={t('image-description')}
+              height={256}
               loading='eager'
               src={comission}
               placeholder='blur'
+              width={256}
             />
           </div>
           <h1 className={cx.h1}>
