@@ -60,9 +60,9 @@ const Index = () => {
             />
             <ListLink
               className={cx.liTop}
-              prefix={t('link-blog-prefix')}
-              text={t('link-blog-link-label')}
-              postfix={t('link-blog-postfix')}
+              prefix={t('blog-prefix')}
+              text={t('blog-link-label')}
+              postfix={t('blog-postfix')}
               rel='me'
               url='https://melkat.link'
             />
