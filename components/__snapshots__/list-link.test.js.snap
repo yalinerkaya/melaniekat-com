@@ -4,7 +4,6 @@ exports[`component - layout should render 1`] = `
 <li
   className="lh-title mv2"
 >
-  
   <a
     className="link underline"
     style={
@@ -12,10 +11,7 @@ exports[`component - layout should render 1`] = `
         "color": "#0096DB",
       }
     }
-  >
-    
-  </a>
-  
+  />
 </li>
 `;
 
@@ -23,7 +19,6 @@ exports[`component - layout should render with props 1`] = `
 <li
   className="lh-title mv2"
 >
-  
   <a
     className="link underline"
     href="https://www.uglytarantula.com"
@@ -35,6 +30,5 @@ exports[`component - layout should render with props 1`] = `
   >
     Ugly Tarantula
   </a>
-  
 </li>
 `;
