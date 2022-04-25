@@ -89,13 +89,6 @@ const Index = () => {
               rel='me'
               url='https://github.com/zicklepop'
             />
-            <ListLink
-              prefix={t('twitter-prefix')}
-              text={t('twitter-link-label')}
-              postfix={t('twitter-postfix')}
-              rel='me'
-              url='https://twitter.com/zicklepop'
-            />
 
             <ListLink
               prefix={t('art-by-prefix')}
