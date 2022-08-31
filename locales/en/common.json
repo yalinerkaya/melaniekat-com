@@ -2,7 +2,7 @@
   "title": "Melanie Kat",
   "description": "the personal homepage of melanie kat",
   "cover-image-description": "logo for melaniekat.com",
-  "image-description": "commission by @rosygaze",
+  "image-description": "commission by dzuk.zone",
   "introduction": "Hi! My name is Melanie.",
   "gf-prefix": "working on ",
   "gf-link-label": "girlfriend.technology",
@@ -20,6 +20,6 @@
   "github-link-label": "github",
   "github-postfix": " (drop ICE)",
   "art-by-prefix": "artwork by ",
-  "art-by-link-label": "Rosy Gaze",
+  "art-by-link-label": "dzuk",
   "art-by-postfix": ""
 }
