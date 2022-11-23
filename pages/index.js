@@ -21,6 +21,7 @@ const cx = {
   ul: "list pl0 tl",
   liTop: "lh-title mb2 mt4",
   img: "center dib ma3",
+  liSocials: "w-50 dib",
 };
 
 const Index = () => {
@@ -70,12 +71,28 @@ const Index = () => {
             />
 
             <ListLink
-              className={cx.liTop}
-              prefix={t("github-prefix")}
-              text={t("github-link-label")}
-              postfix={t("github-postfix")}
+              className={`${cx.liTop} ${cx.liSocials}`}
+              text={"cohost"}
+              rel="me"
+              url="https://cohost.org/melkat"
+            />
+            <ListLink
+              className={cx.liSocials}
+              text={"github"}
               rel="me"
               url="https://github.com/zicklepop"
+            />
+            <ListLink
+              className={cx.liSocials}
+              text={"mastodon"}
+              rel="me"
+              url="https://nyan.lol/@zicklepop"
+            />
+            <ListLink
+              className={cx.liSocials}
+              text={"tumblr"}
+              rel="me"
+              url="https://zicklepop.com"
             />
 
             <ListLink
