@@ -31,8 +31,8 @@ const Index = () => {
         <article className={cx.article}>
           <Logo alt={t("image-description")} className={cx.img} width={256} />
           <h1 className={cx.h1}>
-            <Link href="/">
-              <a className={cx.h1a}>{t("introduction")}</a>
+            <Link href="/" className={cx.h1a}>
+              {t("introduction")}
             </Link>
           </h1>
 
