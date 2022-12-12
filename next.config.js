@@ -9,7 +9,7 @@ const nextConfig = {
       {
         source: "/.well-known/webfinger",
         destination:
-          "https://nyan.lol/.well-known/webfinger?resource=acct:zicklepop@nyan.lol",
+          "http://nyan.lol/.well-known/webfinger?resource=acct:zicklepop@nyan.lol",
       },
     ];
   },
