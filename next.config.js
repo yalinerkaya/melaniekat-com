@@ -8,7 +8,8 @@ const nextConfig = {
     return [
       {
         source: "/.well-known/webfinger",
-        destination: "/api/webfinger",
+        destination:
+          "https://nyan.lol/.well-known/webfinger?resource=acct:zicklepop@nyan.lol",
       },
     ];
   },
