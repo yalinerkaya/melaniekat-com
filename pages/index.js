@@ -72,12 +72,6 @@ const Index = () => {
 
             <ListLink
               className={`${cx.liTop} ${cx.liSocials}`}
-              text={"cohost"}
-              rel="me"
-              url="https://cohost.org/melkat"
-            />
-            <ListLink
-              className={cx.liSocials}
               text={"github"}
               rel="me"
               url="https://github.com/zicklepop"
