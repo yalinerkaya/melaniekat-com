@@ -1,5 +1,5 @@
 import get from 'lodash/get'
-import locales from '../utils/locales'
+import locales from '../locales'
 import { useState } from 'react'
 
 const useI18n = router => {

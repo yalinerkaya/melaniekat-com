@@ -1,23 +1,17 @@
 import PropTypes from 'prop-types'
 
-const cx = {
-  li: 'my-2',
-  a: 'underline',
-}
-
 const ListLink = ({
   className,
-  color,
-  text,
-  rel,
-  prefix,
   postfix,
+  prefix,
+  rel,
+  text,
   url,
   urlClassName,
 }) => (
-  <li className={className}>
+  <li className={`py-1 ${className}`}>
     {prefix}
-    <a style={{ color }} className={urlClassName} rel={rel} href={url}>
+    <a className={urlClassName} rel={rel} href={url}>
       {text}
     </a>
     {postfix}
@@ -26,22 +20,20 @@ const ListLink = ({
 
 ListLink.propTypes = {
   className: PropTypes.string,
-  color: PropTypes.string,
-  text: PropTypes.string,
-  rel: PropTypes.string,
-  prefix: PropTypes.string,
   postfix: PropTypes.string,
+  prefix: PropTypes.string,
+  rel: PropTypes.string,
+  text: PropTypes.string,
   url: PropTypes.string,
   urlClassName: PropTypes.string,
 }
 
 ListLink.defaultProps = {
-  className: cx.li,
-  urlClassName: cx.a,
-  color: '#0096DB',
-  text: '',
-  prefix: '',
+  className: '',
   postfix: '',
+  prefix: '',
+  text: '',
+  urlClassName: '',
 }
 
 export default ListLink
