@@ -1,117 +1,93 @@
-import Layout from "../components/layout";
-import Link from "next/link";
-import ListLink from "../components/list-link";
-import Logo from "../components/logo";
-import useI18n from "../hooks/use-i18n";
-import { useRouter } from "next/router";
-
-const colors = {
-  gween: "#65A300",
-  mel: "#0096DB",
-  pweach: "#FF5757",
-  pwink: "#FF52A3",
-};
+import Layout from '../components/layout'
+import Link from 'next/link'
+import ListLink from '../components/list-link'
+import Logo from '../components/logo'
+import useI18n from '../hooks/use-i18n'
+import { useRouter } from 'next/navigation'
 
 const cx = {
-  main: "vh-100 dt w-100",
-  container: "dtc v-mid tc",
-  article: "measure-narrow center sans-serif f3 fw2 ph2",
-  h1: "lh-title fw2 f2",
-  h1a: "no-underline",
-  ul: "list pl0 tl",
-  liTop: "lh-title mb2 mt4",
-  img: "center dib ma3",
-};
+  listTop: 'pt-5',
+}
 
 const Index = () => {
-  const t = useI18n(useRouter());
+  const t = useI18n(useRouter())
   return (
-    <Layout className={cx.main}>
-      <div className={cx.container}>
-        <article className={cx.article}>
-          <Logo alt={t("image-description")} className={cx.img} width={256} />
-          <h1 className={cx.h1}>
-            <Link href="/" className={cx.h1a}>
-              {t("introduction")}
-            </Link>
-          </h1>
+    <Layout>
+      <article className="w-full max-w-lg px-2 pb-3">
+        <Logo
+          alt={t('image-description')}
+          className="mx-auto py-5"
+          width={256}
+        />
+        <h1 className="py-3 text-center text-4xl">
+          <Link href="/">{t('introduction')}</Link>
+        </h1>
 
-          <ul className={cx.ul}>
-            <ListLink
-              className={cx.liTop}
-              color={colors.pwink}
-              prefix={t("gf-prefix")}
-              text={t("gf-link-label")}
-              postfix={t("gf-postfix")}
-              rel="me"
-              url="https://girlfriend.technology"
-            />
-            <ListLink
-              className={cx.liTop}
-              prefix={t("blog-prefix")}
-              text={t("blog-link-label")}
-              postfix={t("blog-postfix")}
-              rel="me"
-              url="https://melkat.link"
-            />
-            <ListLink
-              prefix={t("gifs-prefix")}
-              text={t("gifs-link-label")}
-              postfix={t("gifs-postfix")}
-              rel="me"
-              url="https://myhot.pics"
-            />
-            <ListLink
-              prefix={t("deals-prefix")}
-              text={t("deals-link-label")}
-              postfix={t("deals-postfix")}
-              rel="me"
-              url="https://melkat.deals"
-            />
+        <ul className="list-fauxmd">
+          <ListLink
+            className={cx.listTop}
+            postfix={t('gf-postfix')}
+            prefix={t('gf-prefix')}
+            rel="me"
+            text={t('gf-link-label')}
+            url="https://girlfriend.technology"
+            urlClassName="text-hot-pink-500"
+          />
+          <ListLink
+            className={cx.listTop}
+            postfix={t('blog-postfix')}
+            prefix={t('blog-prefix')}
+            rel="me"
+            text={t('blog-link-label')}
+            url="https://melkat.link"
+          />
+          <ListLink
+            postfix={t('gifs-postfix')}
+            prefix={t('gifs-prefix')}
+            rel="me"
+            text={t('gifs-link-label')}
+            url="https://myhot.pics"
+          />
+          <ListLink
+            postfix={t('deals-postfix')}
+            prefix={t('deals-prefix')}
+            rel="me"
+            text={t('deals-link-label')}
+            url="https://melkat.deals"
+          />
 
-            <ListLink
-              className={cx.liTop}
-              color={colors.gween}
-              text={"github"}
-              rel="me"
-              url="https://github.com/zicklepop"
-            />
-            <ListLink
-              color={colors.gween}
-              text={"mastodon"}
-              rel="me"
-              url="https://nyan.lol/@zicklepop"
-            />
-            <ListLink
-              color={colors.gween}
-              text={"tumblr"}
-              rel="me"
-              url="https://zicklepop.com"
-            />
+          <ListLink
+            className={cx.listTop}
+            rel="me"
+            text={'github'}
+            url="https://github.com/zicklepop"
+            urlClassName="text-limeade-600"
+          />
+          <ListLink
+            rel="me"
+            text={'mastodon'}
+            url="https://nyan.lol/@zicklepop"
+            urlClassName="text-limeade-600"
+          />
+          <ListLink
+            rel="me"
+            text={'tumblr'}
+            url="https://zicklepop.com"
+            urlClassName="text-limeade-600"
+          />
 
-            <ListLink
-              prefix={t("art-by-prefix")}
-              text={t("art-by-link-label")}
-              postfix={t("art-by-postfix")}
-              className={cx.liTop}
-              color={colors.pweach}
-              url="https://dzuk.zone"
-            />
-          </ul>
-        </article>
-      </div>
-      <style global jsx>
-        {`
-          ul > li::before {
-            content: "*";
-            color: #8f8f8f;
-            width: 1rem;
-            display: inline-block;
-          }
-        `}
-      </style>
+          <ListLink
+            className={cx.listTop}
+            postfix={t('art-by-postfix')}
+            prefix={t('art-by-prefix')}
+            text={t('art-by-link-label')}
+            url="https://dzuk.zone"
+            urlClassName="text-persimmon-500"
+          />
+        </ul>
+      </article>
     </Layout>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
