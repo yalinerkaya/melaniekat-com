@@ -5,7 +5,7 @@ import ja from '../locales/ja/common.json'
 const locales = {
   en,
   pl,
-  ja
+  ja,
 }
 
 export default locales

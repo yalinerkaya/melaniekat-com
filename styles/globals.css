@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-700 dark:bg-black dark:text-gray-200;
+  }
+}
+
+.list-faux-md > li::before {
+  content: '*';
+  color: #8f8f8f;
+  width: 1rem;
+  display: inline-block;
+}
