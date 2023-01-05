@@ -24,10 +24,6 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <meta name="description" content={i18nDescription} />
         <meta name="keywords" content="melkat, melanie, kat" />
-        <meta name="twitter:description" content={i18nDescription} />
-        <meta name="twitter:image" content="/cover.png" />
-        <meta name="twitter:image:alt" content={t('cover-image-description')} />
-        <meta name="twitter:title" content={i18nTitle} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:description" content={i18nDescription} />
         <meta property="og:image" content="/cover.png" />
