@@ -3,7 +3,7 @@ import Link from 'next/link'
 import ListLink from '../components/list-link'
 import Logo from '../components/logo'
 import useI18n from '../hooks/use-i18n'
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/router'
 
 const cx = {
   listTop: 'pt-5',
