@@ -42,6 +42,13 @@ const Index = () => {
             url="https://melkat.link"
           />
           <ListLink
+            postfix={t('mutuals-postfix')}
+            prefix={t('mutuals-prefix')}
+            rel="me"
+            text={t('mutuals-link-label')}
+            url="https://mutuals.social"
+          />
+          <ListLink
             postfix={t('gifs-postfix')}
             prefix={t('gifs-prefix')}
             rel="me"
@@ -54,6 +61,13 @@ const Index = () => {
             rel="me"
             text={t('deals-link-label')}
             url="https://melkat.deals"
+          />
+          <ListLink
+            postfix={t('toot-postfix')}
+            prefix={t('toot-prefix')}
+            rel="me"
+            text={t('toot-link-label')}
+            url="https://toot.cards"
           />
 
           <ListLink
@@ -73,6 +87,12 @@ const Index = () => {
             rel="me"
             text={'tumblr'}
             url="https://zicklepop.com"
+            urlClassName="text-limeade-600"
+          />
+          <ListLink
+            rel="me"
+            text={'omg.lol'}
+            url="https://melkat.lol"
             urlClassName="text-limeade-600"
           />
 
