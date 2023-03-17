@@ -39,7 +39,7 @@ const Index = () => {
             prefix={t('blog-prefix')}
             rel="me"
             text={t('blog-link-label')}
-            url="https://melkat.link"
+            url="https://melkat.blog"
           />
           <ListLink
             postfix={t('mutuals-postfix')}
