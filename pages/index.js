@@ -71,6 +71,7 @@ const Index = () => {
           />
 
           <ListLink
+            className={cx.listTop}
             rel="me"
             text={'mastodon'}
             url="https://nyan.lol/@zicklepop"
@@ -89,7 +90,6 @@ const Index = () => {
             urlClassName="text-limeade-600"
           />
           <ListLink
-            className={cx.listTop}
             rel="me"
             text={'github'}
             url="https://github.com/zicklepop"
