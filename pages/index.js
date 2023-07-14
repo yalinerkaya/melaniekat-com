@@ -71,13 +71,6 @@ const Index = () => {
           />
 
           <ListLink
-            className={cx.listTop}
-            rel="me"
-            text={'github'}
-            url="https://github.com/zicklepop"
-            urlClassName="text-limeade-600"
-          />
-          <ListLink
             rel="me"
             text={'mastodon'}
             url="https://nyan.lol/@zicklepop"
@@ -85,14 +78,21 @@ const Index = () => {
           />
           <ListLink
             rel="me"
-            text={'tumblr'}
-            url="https://zicklepop.com"
+            text={'bookwyrm'}
+            url="https://books.nyan.lol/user/zicklepop"
             urlClassName="text-limeade-600"
           />
           <ListLink
             rel="me"
             text={'omg.lol'}
             url="https://melkat.lol"
+            urlClassName="text-limeade-600"
+          />
+          <ListLink
+            className={cx.listTop}
+            rel="me"
+            text={'github'}
+            url="https://github.com/zicklepop"
             urlClassName="text-limeade-600"
           />
 
