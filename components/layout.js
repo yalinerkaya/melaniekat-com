@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import useI18n from '../hooks/use-i18n'
 import { useRouter } from 'next/navigation'
 import englishDefaults from '../locales/en/common.json'
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
         <meta property="og:type" content="website" />
       </Head>
       {children}
+      <Script src="https://um.melkat.dev/script.js" strategy="lazyOnload" data-website-id="13a124a3-12b4-4f55-95ab-f4733393ebba" />
     </main>
   )
 }
