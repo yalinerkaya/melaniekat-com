@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:title" content={i18nTitle} />
         <meta property="og:type" content="website" />
+        <meta name="robots" content="noai" />
       </Head>
       {children}
       <Script src="https://um.melaniekat.com/script.js" strategy="lazyOnload" data-website-id="13a124a3-12b4-4f55-95ab-f4733393ebba" />
