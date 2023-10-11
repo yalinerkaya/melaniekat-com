@@ -79,12 +79,6 @@ const Index = () => {
           />
           <ListLink
             rel="me"
-            text={'bookwyrm'}
-            url="https://books.nyan.lol/user/zicklepop"
-            urlClassName="text-limeade-600"
-          />
-          <ListLink
-            rel="me"
             text={'omg.lol'}
             url="https://melkat.lol"
             urlClassName="text-limeade-600"
