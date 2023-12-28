@@ -80,7 +80,7 @@ const Index = () => {
           <ListLink
             rel="me"
             text={'omg.lol'}
-            url="https://melkat.lol"
+            url="https://melanie.lol"
             urlClassName="text-limeade-600"
           />
           <ListLink
