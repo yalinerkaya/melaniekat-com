@@ -35,7 +35,11 @@ const Layout = ({ children }) => {
         <meta name="robots" content="noai" />
       </Head>
       {children}
-      <Script src="https://um.melaniekat.com/script.js" strategy="lazyOnload" data-website-id="13a124a3-12b4-4f55-95ab-f4733393ebba" />
+      <Script
+        src="https://um.melaniekat.com/script.js"
+        strategy="lazyOnload"
+        data-website-id="13a124a3-12b4-4f55-95ab-f4733393ebba"
+      />
     </main>
   )
 }
