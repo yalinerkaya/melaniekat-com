@@ -63,11 +63,11 @@ const Index = () => {
             url="https://melkat.deals"
           />
           <ListLink
-            postfix={t('toot-postfix')}
-            prefix={t('toot-prefix')}
+            postfix={t('moe-postfix')}
+            prefix={t('moe-prefix')}
             rel="me"
-            text={t('toot-link-label')}
-            url="https://toot.cards"
+            text={t('moe-link-label')}
+            url="https://melanie.moe"
           />
 
           <ListLink
@@ -88,15 +88,6 @@ const Index = () => {
             text={'github'}
             url="https://github.com/zicklepop"
             urlClassName="text-limeade-600"
-          />
-
-          <ListLink
-            className={cx.listTop}
-            postfix={t('art-by-postfix')}
-            prefix={t('art-by-prefix')}
-            text={t('art-by-link-label')}
-            url="https://dzuk.zone"
-            urlClassName="text-persimmon-500"
           />
         </ul>
       </article>
