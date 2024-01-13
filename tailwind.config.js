@@ -1,55 +1,44 @@
 module.exports = {
-  content: ['./{pages,components}/**/*.{js,jsx,ts,tsx}'],
+  content: ['./{app,pages}/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      animation: {
+        gradient: 'gradient 8s ease infinite',
+      },
+      backgroundImage: {
+        'conic-rainbow':
+          'conic-gradient(from 33deg, oklch(70.2% 0.192 234.1), oklch(66.3% 0.3018 359.7), oklch(64.33% 0.2908 26.26), oklch(81.2% 0.2579 130.7), oklch(70.2% 0.192 234.1))',
+        'linear-blues':
+          'linear-gradient(-45deg, oklch(66.3% 0.3018 359.7), oklch(70.2% 0.192 234.1))',
+        'linear-greens':
+          'linear-gradient(-45deg, oklch(70.2% 0.192 234.1), oklch(81.2% 0.2579 130.7))',
+        'linear-reds':
+          'linear-gradient(45deg, oklch(66.3% 0.3018 359.7), oklch(64.33% 0.2908 26.26))',
+      },
+      backgroundSize: {
+        '2x': '200% 200%',
+        '3x': '300% 300%',
+      },
+      boxShadow: {
+        outer:
+          'inset 0 0 5px oklch(0 0 0 / .2), 0 2px 10px oklch(0 0 0 / .1), 0 20px 25px -5px oklch(0 0 0 / .05), 0 8px 10px -5px oklch(60% 0 0 / .3)',
+        inner:
+          'inset 0 3px 1px 0 oklch(100% 0 0 / .8), inset 0 -10px 10px 0 oklch(0 0 0 / .1), 0 0 10px oklch(0 0 0 / .2)',
+      },
       colors: {
-        'hot-pink': {
-          50: '#fef1f7',
-          100: '#fee5f2',
-          200: '#ffcbe6',
-          300: '#ffa1d0',
-          400: '#ff52a3',
-          500: '#fa3a8e',
-          600: '#ea1869',
-          700: '#cc0a50',
-          800: '#a80c42',
-          900: '#8c0f3a',
+        p3: {
+          blue: 'oklch(70.2% 0.192 234.1)',
+          green: 'oklch(81.2% 0.2579 130.7)',
+          red: 'oklch(64.33% 0.2908 26.26)',
+          pink: 'oklch(66.3% 0.3018 359.7)',
         },
-        persimmon: {
-          50: '#fff1f1',
-          100: '#ffe1e1',
-          200: '#ffc7c7',
-          300: '#ffa0a0',
-          400: '#ff5757',
-          500: '#f83b3b',
-          600: '#e51d1d',
-          700: '#c11414',
-          800: '#a01414',
-          900: '#841818',
-        },
-        cerulean: {
-          50: '#f0f9ff',
-          100: '#e0f3fe',
-          200: '#b9e8fe',
-          300: '#7cd6fd',
-          400: '#36c3fa',
-          500: '#0caceb',
-          600: '#0096db',
-          700: '#016da3',
-          800: '#065c86',
-          900: '#0b4d6f',
-        },
-        limeade: {
-          50: '#f9ffe5',
-          100: '#efffc7',
-          200: '#deff95',
-          300: '#c6fe58',
-          400: '#aef526',
-          500: '#8edc06',
-          600: '#65a300',
-          700: '#528506',
-          800: '#43690b',
-          900: '#38580f',
+      },
+      keyframes: {
+        gradient: {
+          '0%, 100%': { backgroundPosition: 'top left' },
+          '25%': { backgroundPosition: 'bottom left' },
+          '50%': { backgroundPosition: 'bottom right' },
+          '75%': { backgroundPosition: 'top right' },
         },
       },
     },

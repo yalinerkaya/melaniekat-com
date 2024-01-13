@@ -1,13 +1,4 @@
 const nextConfig = {
-  swcMinify: true,
-  reactStrictMode: true,
-  images: {
-    formats: ['image/avif', 'image/webp'],
-  },
-  i18n: {
-    locales: ['en', 'pl', 'ja'],
-    defaultLocale: 'en',
-  },
   async rewrites() {
     return [
       {
