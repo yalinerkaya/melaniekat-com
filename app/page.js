@@ -83,11 +83,18 @@ export default function Page() {
         <Highlight className="text-shadow-green" href="https://myhot.pics">
           myhot.pics
         </Highlight>
-        {`, a gif library, and `}
+        {`, a gif library, `}
         <Highlight className="text-shadow-green" href="https://melanie.moe">
           melanie.moe
         </Highlight>
-        , a gallery of art I commissioned
+        {`, a gallery of art I commissioned, and `}
+        <Highlight
+          className="text-shadow-green"
+          href="https://frames.melkat.gay"
+        >
+          pride frames
+        </Highlight>
+        , for adding a pride flag to your pic
       </Section>
     </>
   )

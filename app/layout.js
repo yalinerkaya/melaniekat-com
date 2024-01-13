@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <html lang="en">
       <head />
       <body className="flex min-h-svh items-center justify-center bg-white font-sans  text-gray-800 dark:bg-black dark:text-gray-100">
-        <div className="mx-1 block max-w-md text-3xl md:text-4xl">
+        <div className="mx-1 my-4 block max-w-md text-3xl md:text-4xl">
           {children}
         </div>
         <Script
