@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./{app,pages}/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -33,6 +35,12 @@ module.exports = {
           pink: 'oklch(66.3% 0.3018 359.7)',
         },
       },
+      textShadow: {
+        blue: '0 0 10px oklch(70.2% 0.192 234.1 / .3)',
+        green: '0 0 10px oklch(81.2% 0.2579 130.7 / .3)',
+        red: '0 0 10px oklch(64.33% 0.2908 26.26 / .3)',
+        pink: '0 0 10px oklch(66.3% 0.3018 359.7 / .3)',
+      },
       keyframes: {
         gradient: {
           '0%, 100%': { backgroundPosition: 'top left' },
@@ -43,4 +51,16 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': value => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }

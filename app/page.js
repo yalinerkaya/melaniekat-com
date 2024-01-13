@@ -44,30 +44,50 @@ export default function Page() {
       <Logo />
       <Heading>
         {`I’m `}
-        <Highlight>Melanie Kat</Highlight>
+        <Highlight className="text-shadow-blue">Melanie Kat</Highlight>
       </Heading>
-      <Section className="bg-linear-reds decoration-p3-pink">
+      <Section className="bg-linear-reds">
         {`I build apps at `}
-        <Highlight href="https://girlfriend.technology">
+        <Highlight
+          className="text-shadow-pink"
+          href="https://girlfriend.technology"
+        >
           girlfriend technology
         </Highlight>
         {` and writing on `}
-        <Highlight href="https://melkat.blog">my blog</Highlight>
+        <Highlight className="text-shadow-pink" href="https://melkat.blog">
+          my blog
+        </Highlight>
         {`. You can follow me on `}
-        <Highlight href="https://nyan.lol/@zicklepop">mastodon</Highlight>
+        <Highlight
+          className="text-shadow-pink"
+          href="https://nyan.lol/@zicklepop"
+        >
+          mastodon
+        </Highlight>
         {` and `}
-        <Highlight href="https://melanie.lol">elsewhere</Highlight>
+        <Highlight className="text-shadow-pink" href="https://melanie.lol">
+          elsewhere
+        </Highlight>
       </Section>
-      <Section className="bg-linear-greens decoration-p3-green">
+      <Section className="bg-linear-greens">
         {`Some of my projects include `}
-        <Highlight href="https://mutuals.social">mutuals.social</Highlight>
+        <Highlight className="text-shadow-green" href="https://mutuals.social">
+          mutuals.social
+        </Highlight>
         {`, a club for my mutuals, `}
-        <Highlight href="https://melkat.deals">melkat.deals</Highlight>
+        <Highlight className="text-shadow-green" href="https://melkat.deals">
+          melkat.deals
+        </Highlight>
         {`, a faux ad network, `}
-        <Highlight href="https://myhot.pics">myhot.pics</Highlight>
+        <Highlight className="text-shadow-green" href="https://myhot.pics">
+          myhot.pics
+        </Highlight>
         {`, a gif library, and `}
-        <Highlight href="https://melanie.moe">melanie.moe</Highlight>, a gallery
-        of art I commissioned
+        <Highlight className="text-shadow-green" href="https://melanie.moe">
+          melanie.moe
+        </Highlight>
+        , a gallery of art I commissioned
       </Section>
     </>
   )
