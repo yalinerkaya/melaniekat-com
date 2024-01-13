@@ -54,7 +54,7 @@ export default function Page() {
         >
           girlfriend technology
         </Highlight>
-        {` and writing on `}
+        {` and write on `}
         <Highlight className="text-shadow-pink" href="https://melkat.blog">
           my blog
         </Highlight>
